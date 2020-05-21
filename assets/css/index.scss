@@ -9,7 +9,7 @@ button {
   font-weight: bold;
 }
 h1 {
-  color: rgb(17, 17, 117);
+  color: $blue;
   font-size: 4rem;
 }
 h3 {
@@ -31,24 +31,11 @@ h3 {
 }
 .gradient {
   background: #43c6ac; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to bottom,
-    #191654,
-    #43c6ac,
-    #fff
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to bottom,
-    #191654,
-    #43c6ac,
-    #fff
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  > * {
-    margin: 4rem 0;
+  background: linear-gradient(to bottom, #191654, #43c6ac, #fff);
+  > *,
+  footer {
     padding: 4rem 0;
   }
-  /*   div:first-of-type {
-    color: white; */
   h2,
   p {
     color: white;
@@ -68,8 +55,8 @@ svg {
 }
 .countdown {
   margin: 0 -3rem;
-  border-bottom: 5px solid white;
-  border-top: 5px solid white;
+  /*  border-bottom: 5px solid white;
+  border-top: 5px solid white; */
   h2,
   #countdown {
     font-size: 6rem;
