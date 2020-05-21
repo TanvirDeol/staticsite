@@ -69,6 +69,8 @@ h3 {
   background: -webkit-gradient(linear, left top, left bottom, from(#191654), color-stop(#43c6ac), to(#e9e9d3));
   background: linear-gradient(to bottom, #191654, #43c6ac, #e9e9d3);
   padding-bottom: 450px;
+  position: relative;
+  top: -400px;
 }
 
 .gradient > *,
@@ -128,9 +130,8 @@ footer svg {
 
 footer {
   background-color: #191654;
-  padding-bottom: 100px;
   position: relative;
-  top: -210px;
+  top: -610px;
 }
 
 .footer-svg {
@@ -138,6 +139,6 @@ footer {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
   position: relative;
-  top: -200px;
+  top: -600px;
 }
 /*# sourceMappingURL=index.css.map */
