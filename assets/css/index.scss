@@ -1,5 +1,10 @@
 $blue: #191654;
-
+.wave {
+  width: 100vw;
+  height: auto;
+  fill: $blue;
+  margin: 0;
+}
 button {
   padding: 0.5rem 1rem;
   background-color: #259b9b;
@@ -31,7 +36,7 @@ h3 {
 }
 .gradient {
   background: #43c6ac; /* fallback for old browsers */
-  background: linear-gradient(to bottom, #191654, #43c6ac, #fff);
+  background: linear-gradient(to bottom, #191654, #43c6ac, #e9e9d3);
   > *,
   footer {
     padding: 4rem 0;
@@ -40,8 +45,6 @@ h3 {
   p {
     color: white;
   }
-
-  /* } */
 }
 
 svg {
@@ -55,6 +58,7 @@ svg {
 }
 .countdown {
   margin: 0 -3rem;
+  background-color: rgba(255, 255, 255, 0.1);
   /*  border-bottom: 5px solid white;
   border-top: 5px solid white; */
   h2,
