@@ -11,21 +11,25 @@ h2:first-of-type {
 h3 {
   color: darkblue;
 }
-div img {
+#top img,
+#desc img {
   width: 50%;
   max-width: 600px;
   height: auto;
 }
 
-.list-group {
-  max-width: 1000px;
-  min-width: 400px;
-  width: 80%;
-}
 .list-group-item {
   border-left: 10px solid rgb(17, 17, 117);
   margin: 0.5rem 0;
 }
 .list-group-item span:first-of-type {
   margin: 0 1rem 0 0;
+}
+.body > * {
+  margin: 3rem 0;
+}
+svg {
+  width: 60px;
+  height: 60px;
+  margin: 10px 30px;
 }
