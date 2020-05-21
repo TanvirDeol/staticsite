@@ -33,3 +33,6 @@ svg {
   height: 60px;
   margin: 10px 30px;
 }
+.rounded {
+  border-radius: 1rem !important;
+}
