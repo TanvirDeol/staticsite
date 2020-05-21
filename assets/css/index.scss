@@ -1,4 +1,5 @@
 $blue: #191654;
+
 .wave {
   width: 100vw;
   height: auto;
@@ -37,6 +38,7 @@ h3 {
 .gradient {
   background: #43c6ac; /* fallback for old browsers */
   background: linear-gradient(to bottom, #191654, #43c6ac, #e9e9d3);
+  padding-bottom: 450px;
   > *,
   footer {
     padding: 4rem 0;
@@ -47,7 +49,7 @@ h3 {
   }
 }
 
-svg {
+footer svg {
   width: 60px;
   height: 60px;
   margin: 10px 30px;
@@ -85,4 +87,13 @@ svg {
 }
 footer {
   background-color: $blue;
+  padding-bottom: 100px;
+  position: relative;
+  top: -210px;
+}
+.footer-svg {
+  fill: $blue;
+  transform: rotate(180deg);
+  position: relative;
+  top: -200px;
 }
