@@ -32,7 +32,7 @@ body {
 button {
   padding: 0.5rem 1rem;
   background-color: #259b9b;
-  border-radius: 1rem;
+  border-radius: 2rem;
   border-style: none;
   color: white;
   font-weight: bold;
@@ -51,7 +51,7 @@ h3 {
 #desc img {
   width: 50%;
   max-width: 600px;
-  height: auto;
+  height: 50%;
 }
 
 .list-group-item {
@@ -70,7 +70,7 @@ h3 {
   background: linear-gradient(to bottom, #191654, #43c6ac, #e9e9d3);
   padding-bottom: 450px;
   position: relative;
-  top: -400px;
+  top: -500px;
 }
 
 .gradient > *,
@@ -91,7 +91,7 @@ footer svg {
 }
 
 .rounded {
-  border-radius: 1rem !important;
+  border-radius: 2rem !important;
 }
 
 .countdown {
@@ -131,7 +131,7 @@ footer svg {
 footer {
   background-color: #191654;
   position: relative;
-  top: -610px;
+  top: -710px;
 }
 
 .footer-svg {
@@ -139,6 +139,6 @@ footer {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
   position: relative;
-  top: -600px;
+  top: -700px;
 }
 /*# sourceMappingURL=index.css.map */
