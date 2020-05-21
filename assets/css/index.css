@@ -1,8 +1,32 @@
-.wave {
-  width: 100vw;
+body {
+  background-color: #191654;
+}
+
+#top {
+  padding: 5rem;
+  padding-bottom: 300px;
+  background-color: white;
+  z-index: -2;
+}
+
+.wave,
+.shadow-wave {
+  width: 100%;
   height: auto;
   fill: #191654;
   margin: 0;
+  position: relative;
+  top: -500px;
+  z-index: 1000;
+}
+
+.shadow-wave {
+  position: relative;
+  top: -250px;
+  -webkit-transform: rotate(-2deg);
+          transform: rotate(-2deg);
+  fill: #191654;
+  z-index: 0;
 }
 
 button {

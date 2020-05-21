@@ -1,10 +1,30 @@
 $blue: #191654;
 
-.wave {
-  width: 100vw;
+body {
+  background-color: $blue;
+}
+#top {
+  padding: 5rem;
+  padding-bottom: 300px;
+  background-color: white;
+  z-index: -2;
+}
+.wave,
+.shadow-wave {
+  width: 100%;
   height: auto;
   fill: $blue;
   margin: 0;
+  position: relative;
+  top: -500px;
+  z-index: 1000;
+}
+.shadow-wave {
+  position: relative;
+  top: -250px;
+  transform: rotate(-2deg);
+  fill: $blue;
+  z-index: 0;
 }
 button {
   padding: 0.5rem 1rem;
