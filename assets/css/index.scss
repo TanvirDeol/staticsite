@@ -1,6 +1,8 @@
+$blue: #191654;
+
 button {
   padding: 0.5rem 1rem;
-  background-color: #f8ce42;
+  background-color: #259b9b;
   border-radius: 1rem;
   border-style: none;
   color: white;
@@ -8,6 +10,7 @@ button {
 }
 h1 {
   color: rgb(17, 17, 117);
+  font-size: 4rem;
 }
 h3 {
   color: #fff;
@@ -20,7 +23,7 @@ h3 {
 }
 
 .list-group-item {
-  border-left: 10px solid rgb(17, 17, 117);
+  border-left: 10px solid $blue;
   margin: 0.5rem 0;
   span:first-of-type {
     margin: 0 1rem 0 0;
@@ -61,4 +64,33 @@ svg {
 }
 .rounded {
   border-radius: 1rem !important;
+}
+.countdown {
+  margin: 0 -3rem;
+  border-bottom: 5px solid white;
+  border-top: 5px solid white;
+  h2,
+  #countdown {
+    font-size: 6rem;
+    font-weight: 700;
+    letter-spacing: 0.8rem;
+  }
+  h2 {
+    color: rgba(255, 255, 255, 0.2);
+  }
+}
+#countdown,
+.countdown-text {
+  display: grid;
+  font-family: monospace;
+  grid-template-columns: repeat(4, 1fr);
+  color: white;
+  width: 50%;
+  margin: auto;
+}
+.countdown-text {
+  font-size: 1.5rem;
+}
+footer {
+  background-color: $blue;
 }

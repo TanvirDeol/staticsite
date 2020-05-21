@@ -78,14 +78,11 @@
         <div class="mt-5">
           <h1>Build something cool.</h1>
           <h6 class="my-3 text-secondary">Friday, June 5th at 4:00 PM EST</h6>
-
-          <div class="rounded border p-2 text-center my-5">
-            <p>
-              Starting in:
-            </p>
-
-            <div id="countdown">time</div>
-          </div>
+          <button
+            href="https://docs.google.com/forms/d/e/1FAIpQLScaT9QzQHkPeGbWJH8_3Yl3bl_l3swq9jUjQpMWUH9DhEs7sA/viewform"
+          >
+            Sign Up
+          </button>
         </div>
 
         <img width="600" src="assets/imgs/teamwork.png" />
@@ -112,6 +109,18 @@
           </button>
         </div>
         <img width="600" class="rounded" src="assets/imgs/mss.png" alt="" />
+      </div>
+      <div class="countdown">
+        <h2 class="text-center">COUNTDOWN</h2>
+        <div class="rounded text-center my-5">
+          <div id="countdown"></div>
+          <div class="countdown-text">
+            <span>[DAYS]</span>
+            <span>[HOURS]</span>
+            <span>[MINS]</span>
+            <span>[SECS]</span>
+          </div>
+        </div>
       </div>
       <div id="sponsers">
         <h2 class="text-center">Partners and Sponsors</h2>
@@ -421,7 +430,7 @@
       </div>
     </div>
 
-    <footer class="bg-primary text-white">
+    <footer class="text-white">
       <div
         class="container d-flex flex-column justify-content-center align-items-center"
       >
@@ -491,30 +500,25 @@
     console.log(counter);
 
     const countDownDate = new Date("June 5, 2020 16:00:00").getTime();
+    let days,
+      hours,
+      mins,
+      secs = 0;
 
     // Update the count down every 1 second
-    let x = setInterval(function () {
-      const now = new Date().getTime();
-      // Find the distance between now and the count down date
-      var distance = countDownDate - now;
+    let tick = setInterval(function () {
+      let now = new Date().getTime();
+      let deltaT = countDownDate - now;
 
       // Time calculations for days, hours, minutes and seconds
-      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      var hours = Math.floor(
-        (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+      let days = Math.floor(deltaT / (1000 * 60 * 60 * 24));
+      let hours = Math.floor(
+        (deltaT % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
       );
-      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      let mins = Math.floor((deltaT % (1000 * 60 * 60)) / (1000 * 60));
+      let secs = Math.floor((deltaT % (1000 * 60)) / 1000);
 
-      // Display the result in the element with id="demo"
-      counter.innerHTML =
-        days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
-
-      // If the count down is finished, write some text
-      if (distance < 0) {
-        clearInterval(x);
-        counter.innerHTML = "EXPIRED";
-      }
+      counter.innerHTML = `<span> ${days}</span><span> ${hours}</span><span> ${mins}</span><span> ${secs}</span>`;
     }, 1000);
   </script>
 </html>

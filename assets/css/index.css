@@ -1,6 +1,6 @@
 button {
   padding: 0.5rem 1rem;
-  background-color: #f8ce42;
+  background-color: #259b9b;
   border-radius: 1rem;
   border-style: none;
   color: white;
@@ -9,6 +9,7 @@ button {
 
 h1 {
   color: #111175;
+  font-size: 4rem;
 }
 
 h3 {
@@ -23,7 +24,7 @@ h3 {
 }
 
 .list-group-item {
-  border-left: 10px solid #111175;
+  border-left: 10px solid #191654;
   margin: 0.5rem 0;
 }
 
@@ -61,5 +62,42 @@ svg {
 
 .rounded {
   border-radius: 1rem !important;
+}
+
+.countdown {
+  margin: 0 -3rem;
+  border-bottom: 5px solid white;
+  border-top: 5px solid white;
+}
+
+.countdown h2,
+.countdown #countdown {
+  font-size: 6rem;
+  font-weight: 700;
+  letter-spacing: 0.8rem;
+}
+
+.countdown h2 {
+  color: rgba(255, 255, 255, 0.2);
+}
+
+#countdown,
+.countdown-text {
+  display: -ms-grid;
+  display: grid;
+  font-family: monospace;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  color: white;
+  width: 50%;
+  margin: auto;
+}
+
+.countdown-text {
+  font-size: 1.5rem;
+}
+
+footer {
+  background-color: #191654;
 }
 /*# sourceMappingURL=index.css.map */
