@@ -1,16 +1,20 @@
 button {
   padding: 0.5rem 1rem;
-  background-color: rgb(107, 31, 179);
+  background-color: #f8ce42;
   border-radius: 1rem;
   border-style: none;
   color: white;
+  font-weight: bold;
 }
-h2:first-of-type {
-  color: rgb(17, 17, 117);
+
+h1 {
+  color: #111175;
 }
+
 h3 {
-  color: darkblue;
+  color: #fff;
 }
+
 #top img,
 #desc img {
   width: 50%;
@@ -19,21 +23,43 @@ h3 {
 }
 
 .list-group-item {
-  border-left: 10px solid rgb(17, 17, 117);
+  border-left: 10px solid #111175;
   margin: 0.5rem 0;
 }
+
 .list-group-item span:first-of-type {
   margin: 0 1rem 0 0;
 }
-.body > * {
+
+.gradient {
+  background: #43c6ac;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, left bottom, from(#191654), color-stop(#43c6ac), to(#fff));
+  background: linear-gradient(to bottom, #191654, #43c6ac, #fff);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /*   div:first-of-type {
+    color: white; */
+  /* } */
+}
+
+.gradient > * {
   margin: 4rem 0;
   padding: 4rem 0;
 }
+
+.gradient h2,
+.gradient p {
+  color: white;
+}
+
 svg {
   width: 60px;
   height: 60px;
   margin: 10px 30px;
 }
+
 .rounded {
   border-radius: 1rem !important;
 }
+/*# sourceMappingURL=index.css.map */
