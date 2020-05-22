@@ -31,8 +31,11 @@ button {
   background-color: #259b9b;
   border-radius: 2rem;
   border-style: none;
-  color: white;
+
   font-weight: bold;
+  a {
+    color: white;
+  }
 }
 h1 {
   color: $blue;
@@ -118,4 +121,33 @@ footer {
   transform: rotate(180deg);
   position: relative;
   top: -700px;
+}
+@media (max-width: 768px) {
+  .countdown h2 {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 500px) {
+  /*   .countdown h2,
+  #countdown span {
+    font-size: 1rem;
+  }
+  svg {
+    display: none;
+  } */
+  body > * {
+    display: none;
+  }
+  img {
+    display: none;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  button {
+    padding: 0.5rem 1rem;
+  }
+  nav {
+    display: none;
+  }
 }

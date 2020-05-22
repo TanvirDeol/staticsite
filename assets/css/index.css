@@ -29,13 +29,16 @@ body {
   z-index: 0;
 }
 
-.btn {
+button {
   padding: 0.5rem 1rem;
   background-color: #259b9b;
   border-radius: 2rem;
   border-style: none;
-  color: white;
   font-weight: bold;
+}
+
+button a {
+  color: white;
 }
 
 h1 {
@@ -97,9 +100,6 @@ footer svg {
 .countdown {
   margin: 0 -3rem;
   background-color: rgba(255, 255, 255, 0.1);
-  line-height: 120%;
-  text-align: center;
-
   /*  border-bottom: 5px solid white;
   border-top: 5px solid white; */
 }
@@ -109,8 +109,6 @@ footer svg {
   font-size: 6rem;
   font-weight: 700;
   letter-spacing: 0.8rem;
-  line-height: 120%;
-  text-align: center;
 }
 
 .countdown h2 {
@@ -145,5 +143,36 @@ footer {
           transform: rotate(180deg);
   position: relative;
   top: -700px;
+}
+
+@media (max-width: 768px) {
+  .countdown h2 {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 500px) {
+  /*   .countdown h2,
+  #countdown span {
+    font-size: 1rem;
+  }
+  svg {
+    display: none;
+  } */
+  body > * {
+    display: none;
+  }
+  img {
+    display: none;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  button {
+    padding: 0.5rem 1rem;
+  }
+  nav {
+    display: none;
+  }
 }
 /*# sourceMappingURL=index.css.map */
