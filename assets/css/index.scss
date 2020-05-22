@@ -138,6 +138,9 @@ footer {
   body > * {
     display: none;
   }
+  body {
+    background-color: white;
+  }
   img {
     display: none;
   }
@@ -147,7 +150,7 @@ footer {
   button {
     padding: 0.5rem 1rem;
   }
-  nav {
+  .navbar {
     display: none;
   }
 }
